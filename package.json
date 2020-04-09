@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "prepare": "npx webpack --config webpack.config.js",
+    "build": "npx webpack --config webpack.config.js",
+    "prepare": "npm run build",
     "test": "echo \"always test passed\" && exit 0"
   },
   "repository": {

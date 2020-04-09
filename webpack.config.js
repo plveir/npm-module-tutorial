@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
-  mode: 'production',
-  entry: __dirname + '/src/index.js',
+  mode: 'development',
+  entry: './src/index.js',
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, '/dist'),
     filename: 'index.js',
     library: 'nmt',
     libraryTarget: 'umd',
@@ -13,11 +15,7 @@ module.exports = {
       {
         test: /\.js/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ]
+        loader: 'babel-loader',
       }
     ]
   },
