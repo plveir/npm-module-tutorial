@@ -2,7 +2,7 @@
   "name": "npm-module-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "prepare": "npx webpack",
     "test": "echo \"always test passed\" && exit 0"
